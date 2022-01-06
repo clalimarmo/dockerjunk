@@ -17,7 +17,6 @@ so psql doesn't try to use unix socket to connect.
 ## Convenient default user for `psql` access
 
     ./init_convenient_superuser.sh
-    echo mypassword > ~/.pgpass && chmod 600 ~/.pgpass
 
 ## Notes
 
