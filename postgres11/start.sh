@@ -5,7 +5,7 @@ mkdir -p $host_data_dir
 echo "postgres superuser password:"
 read -s superpass
 
-echo $superpass > ~/.pgpass && chmod 600 ~/.pgpass
+echo "#host:port:db:user:password" > $HOME/.pgpass
 
 docker run \
 	--name postgres11 \
