@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-host_data_dir="$HOME/var/postgres11/data"
+docker rm -f nginx
 docker run \
 	--name nginx \
 	--shm-size=64m \
